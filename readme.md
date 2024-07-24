@@ -1,5 +1,7 @@
 # ShoujoStack
 
+[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/BookStackApp/BookStack/blob/development/LICENSE)
+
 ## 📚 Project Definition
 
 ShoujoStack is a web-based platform designed for the sharing and discovery of serialized shoujo web novels. Built with modern web technologies, this project aims to facilitate a community-driven ecosystem where writers and readers can interact seamlessly.
