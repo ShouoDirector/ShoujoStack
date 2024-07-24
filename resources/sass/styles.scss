@@ -1,0 +1,232 @@
+@use "sass:math";
+
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "spacing";
+@import "opacity";
+@import "html";
+@import "text";
+@import "colors";
+@import "layout";
+@import "blocks";
+@import "buttons";
+@import "tables";
+@import "forms";
+@import "animations";
+@import "tinymce";
+@import "codemirror";
+@import "components";
+@import "header";
+@import "footer";
+@import "lists";
+@import "pages";
+@import "content";
+
+@media print {
+  @import "print";
+}
+
+// Jquery Sortable Styles
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+// User Avatar Images
+.avatar {
+  border-radius: 100%;
+  @include lightDark(background-color, #eee, #000);
+  width: 30px;
+  height: 30px;
+  &.med {
+    width: 40px;
+    height: 40px;
+  }
+  &.large {
+    width: 80px;
+    height: 80px;
+  }
+  &.huge {
+    width: 120px;
+    height: 120px;
+  }
+  &.square {
+    border-radius: 3px;
+  }
+  &[src$="user_avatar.png"] {
+    @include whenDark {
+      filter: invert(1);
+    }
+  }
+}
+
+// Loading icon
+$loadingSize: 10px;
+.loading-container {
+  position: relative;
+  display: block;
+  margin: $-xl auto;
+  > div {
+    width: $loadingSize;
+    height: $loadingSize;
+    border-radius: $loadingSize;
+    display: inline-block;
+    vertical-align: top;
+    transform: translate3d(-10px, 0, 0);
+    margin-top: $-xs;
+    animation-name: loadingBob;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.62, .28, .23, .99);
+    margin-inline-end: 4px;
+    background-color: var(--color-page);
+    animation-delay: -300ms;
+  }
+  > div:first-child {
+      left: -($loadingSize+$-xs);
+      background-color: var(--color-book);
+      animation-delay: -600ms;
+  }
+  > div:last-of-type {
+    left: $loadingSize+$-xs;
+    background-color: var(--color-chapter);
+    animation-delay: 0ms;
+  }
+  > span {
+    margin-inline-start: $-s;
+    font-style: italic;
+    color: #888;
+    vertical-align: top;
+  }
+}
+
+.skip-to-content-link {
+  position: fixed;
+  top: -52px;
+  left: 0;
+  background-color: #FFF;
+  z-index: 15;
+  border-radius: 0 4px 4px 0;
+  display: block;
+  box-shadow: $bs-dark;
+  font-weight: bold;
+  &:focus {
+    top: $-xl;
+    outline-offset: -10px;
+    outline: 2px dotted var(--color-link);
+  }
+}
+
+.entity-selector {
+  border: 1px solid #DDD;
+  @include lightDark(border-color, #ddd, #111);
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 0.8em;
+  input[type="text"] {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    font-size: 16px;
+    padding: $-s $-m;
+  }
+  .entity-list {
+    overflow-y: scroll;
+    height: 400px;
+    @include lightDark(background-color, #eee, #222);
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+  }
+  .entity-list-item {
+    @include lightDark(background-color, #fff, #222);
+  }
+  .entity-list-item p {
+    margin-bottom: 0;
+  }
+  .entity-list-item:focus {
+    outline: 2px dotted var(--color-primary);
+    outline-offset: -4px;
+  }
+  .entity-list-item.selected {
+    @include lightDark(background-color, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+  }
+  .loading {
+    height: 400px;
+    padding-top: $-l;
+  }
+  &.compact {
+    font-size: 10px;
+    .entity-item-snippet {
+      display: none;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
+}
+
+.fullscreen {
+  border:0;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index: 150;
+}
+
+@include between($s, $m) {
+  #home-default > .grid.third {
+    display: block;
+    columns: 2;
+    column-gap: $-l !important;
+  }
+}
+
+.list-sort-container {
+  display: inline-block;
+  form {
+    display: inline-block;
+  }
+  .list-sort {
+    display: inline-grid;
+    margin-inline-start: $-s;
+    grid-template-columns: minmax(120px, max-content) 40px;
+    font-size: 0.9rem;
+    border: 2px solid #DDD;
+    @include lightDark(border-color, #ddd, #444);
+    border-radius: 4px;
+  }
+  .list-sort-label {
+    font-weight: bold;
+    display: inline-block;
+    @include lightDark(color, #555, #888);
+  }
+  .list-sort-type {
+    text-align: start;
+  }
+  .list-sort-type, .list-sort-dir {
+    padding: $-xs $-s;
+    cursor: pointer;
+  }
+  .list-sort-dir {
+    border-inline-start: 2px solid #DDD;
+    color: #888;
+    @include lightDark(border-color, #ddd, #444);
+    .svg-icon {
+      transition: transform ease-in-out 120ms;
+    }
+    &:hover .svg-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
