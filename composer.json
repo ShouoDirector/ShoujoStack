@@ -67,6 +67,12 @@
         }
     },
     "scripts": {
+        "clean": [
+            "@php artisan config:cache",
+            "@php artisan route:cache",
+            "@php artisan cache:clear",
+            "@php artisan optimize"
+        ],
         "check-static": "phpstan --memory-limit=2g",
         "format": "phpcbf",
         "lint": "phpcs",
