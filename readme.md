@@ -1,149 +1,36 @@
-# BookStack
-
-[![GitHub release](https://img.shields.io/github/release/BookStackApp/BookStack.svg)](https://github.com/BookStackApp/BookStack/releases/latest)
-[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/BookStackApp/BookStack/blob/development/LICENSE)
-[![Crowdin](https://badges.crowdin.net/bookstack/localized.svg)](https://crowdin.com/project/bookstack)
-[![Build Status](https://github.com/BookStackApp/BookStack/workflows/test-php/badge.svg)](https://github.com/BookStackApp/BookStack/actions)
-[![Lint Status](https://github.com/BookStackApp/BookStack/workflows/lint-php/badge.svg)](https://github.com/BookStackApp/BookStack/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5551731994dd22fa1f4f/maintainability)](https://codeclimate.com/github/BookStackApp/BookStack/maintainability)
-
-[![Alternate Source](https://img.shields.io/static/v1?label=Alt+Source&message=Git&color=ef391a&logo=git)](https://source.bookstackapp.com/)
-[![Repo Stats](https://img.shields.io/static/v1?label=GitHub+project&message=stats&color=f27e3f)](https://gh-stats.bookstackapp.com/)
-[![Discord](https://img.shields.io/static/v1?label=Discord&message=chat&color=738adb&logo=discord)](https://discord.gg/ztkBqR2)
-[![Mastodon](https://img.shields.io/static/v1?label=Mastodon&message=@bookstack&color=595aff&logo=mastodon)](https://fosstodon.org/@bookstack)
-
-[![PeerTube](https://img.shields.io/static/v1?label=PeerTube&message=bookstack@foss.video&color=f2690d&logo=peertube)](https://foss.video/c/bookstack)
-[![YouTube](https://img.shields.io/static/v1?label=YouTube&message=bookstackapp&color=ff0000&logo=youtube)](https://www.youtube.com/bookstackapp)
-
-A platform for storing and organising information and documentation. Details for BookStack can be found on the official website at https://www.bookstackapp.com/.
-
-* [Installation Instructions](https://www.bookstackapp.com/docs/admin/installation)
-* [Documentation](https://www.bookstackapp.com/docs)
-* [Demo Instance](https://demo.bookstackapp.com)
-    * [Admin Login](https://demo.bookstackapp.com/login?email=admin@example.com&password=password)
-* [Screenshots](https://www.bookstackapp.com/#screenshots) 
-* [BookStack Blog](https://www.bookstackapp.com/blog)
-* [Issue List](https://github.com/BookStackApp/BookStack/issues)
-* [Discord Chat](https://discord.gg/ztkBqR2)
-* [Support Options](https://www.bookstackapp.com/support/)
+# ShoujoStack
 
 ## 📚 Project Definition
 
-BookStack is an opinionated documentation platform that provides a pleasant and simple out-of-the-box experience. New users to an instance should find the experience intuitive and only basic word-processing skills should be required to get involved in creating content on BookStack. The platform should provide advanced power features to those that desire it but they should not interfere with the core simple user experience.
+ShoujoStack is a web-based platform designed for the sharing and discovery of serialized shoujo web novels. Built with modern web technologies, this project aims to facilitate a community-driven ecosystem where writers and readers can interact seamlessly.
 
-BookStack is not designed as an extensible platform to be used for purposes that differ to the statement above.
-
-In regard to development philosophy, BookStack has a relaxed, open & positive approach. At the end of the day this is free software developed and maintained by people donating their own free time.
-
-You can read more about the project and its origins in [our FAQ here](https://www.bookstackapp.com/about/project-faq/).
-
-## 🌟 Project Sponsors
-
-Shown below are our bronze, silver and gold project sponsors.
-Big thanks to these companies for supporting the project.
-*Note: The listed services are not tested, vetted nor supported by the official BookStack project in any manner.*
-
-[Project donation details](https://www.bookstackapp.com/donate/) - [GitHub Sponsors Page](https://github.com/sponsors/ssddanbrown) - [Ko-fi Page](https://ko-fi.com/ssddanbrown)
-
-#### Gold Sponsor
-
-<table><tbody><tr>
-<td align="center"><a href="https://www.federated.computer/bookstack/" target="_blank">
-    <img width="480" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/federated-computer.png" alt="Federated.computer">
-</a></td>
-</tr></tbody></table>
-
-#### Bronze Sponsors
-
-<table><tbody><tr>
-<td align="center"><a href="https://www.diagrams.net/" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/diagramsnet.png" alt="Diagrams.net">
-</a></td>
-<td align="center"><a href="https://cloudabove.com/hosting" target="_blank">
-    <img width="200" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/cloudabove.png" alt="Cloudabove">
-</a></td>
-</tr><tr>
-<td align="center"><a href="https://www.practicali.be" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/practicali.png" alt="Practicali">
-</a></td>
-<td align="center"><a href="https://www.stellarhosted.com/bookstack/" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/stellarhosted.png" alt="Stellar Hosted">
-</a></td>
-</tr>
-<tr>
-<td align="center" style="text-align: center"><a href="https://nws.netways.de/apps/bookstack/" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/netways.png" alt="NETWAYS Web Services">
-</a></td>
-<td align="center" style="text-align: center"><a href="https://www.schroeck-consulting.de/" target="_blank">
-    <img width="200" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/schroeck-consulting.png" alt="Schroeck IT Consulting">
-</a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://practinet.be/" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/practinet.png" alt="Practinet">
-</a></td>
-<td align="center"><a href="https://transporttalent.com" target="_blank">
-    <img width="240" src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/sponsors/transport-talent.png" alt="Transport Talent">
-</a></td>
-</tr></tbody></table>
-
-## 🛠️ Development & Testing
-
-Please see our [development docs](dev/docs/development.md) for full details regarding work on the BookStack source code.
-
-If you're just looking to customize or extend your own BookStack instance, take a look at our [Hacking BookStack documentation page](https://www.bookstackapp.com/docs/admin/hacking-bookstack/) for details on various options to achieve this without altering the BookStack source code.
-
-Details about BookStack's versioning scheme and the general release process [can be found here](dev/docs/release-process.md).
-
-## 🌎 Translations
-
-Translations for text within BookStack is managed through the [BookStack project on Crowdin](https://crowdin.com/project/bookstack). Some strings have colon-prefixed variables such as `:userName`. Leave these values as they are as they will be replaced at run-time.
-
-Please use [Crowdin](https://crowdin.com/project/bookstack) to contribute translations instead of opening a pull request. The translations within the working codebase can be out-of-date, and merging via code can cause conflicts & sync issues. If for some reason you can't use Crowdin feel free to open an issue to discuss alternative options. 
-
-If you'd like a new language to be added to Crowdin, for you to be able to provide translations for, please [open a new issue here](https://github.com/BookStackApp/BookStack/issues/new?template=language_request.yml).
-
-Please note, translations in BookStack are provided to the "Crowdin Global Translation Memory" which helps BookStack and other projects with finding translations. If you are not happy with contributing to this then providing translations to BookStack, even manually via GitHub, is not advised.
+ShoujoStack is not designed as an extensible platform to be used for purposes that differ to the statement above or imitate any leading online web novel sites.
 
 ## 🎁 Contributing, Issues & Pull Requests
 
-Feel free to [create issues](https://github.com/BookStackApp/BookStack/issues/new/choose) to request new features or to report bugs & problems. Just please follow the template given when creating the issue.
+Feel free to create issue tickets to request new features or to report bugs & problems. Just please follow the template given when creating the issue.
 
 Pull requests are welcome but, unless it's a small tweak, it may be best to open the pull request early or create an issue for your intended change to discuss how it will fit into the project and plan out the merge. Just because a feature request exists, or is tagged, does not mean that feature would be accepted into the core project.
 
-Pull requests should be created from the `development` branch since they will be merged back into `development` once done. Please do not build from or request a merge into the `release` branch as this is only for publishing releases. If you are looking to alter CSS or JavaScript content please edit the source files found in `resources/`. Any CSS or JS files within `public` are built from these source files and therefore should not be edited directly.
-
-The project's code of conduct [can be found here](https://github.com/BookStackApp/BookStack/blob/development/.github/CODE_OF_CONDUCT.md).
-
 ## 🔒 Security
 
-Security information for administering a BookStack instance can be found on the [documentation site here](https://www.bookstackapp.com/docs/admin/security/).
+If you'd like to be notified of new potential security concerns you can email me.
 
-If you'd like to be notified of new potential security concerns you can [sign-up to the BookStack security mailing list](https://updates.bookstackapp.com/signup/bookstack-security-updates).
-
-If you would like to report a security concern, details of doing so [can be found here](https://github.com/BookStackApp/BookStack/blob/development/.github/SECURITY.md).
-
-## ♿ Accessibility
-
-We want BookStack to remain accessible to as many people as possible. We aim for at least WCAG 2.1 Level A standards where possible although we do not strictly test this upon each release. If you come across any accessibility issues please feel free to open an issue.
-
-## 🖥️ Website, Docs & Blog
-
-The website which contains the project docs & blog can be found in the [BookStackApp/website](https://github.com/BookStackApp/website) repo.
+If you would like to report a security concern, please do so by raising an issue.
 
 ## ⚖️ License
 
-The BookStack source is provided under the [MIT License](https://github.com/BookStackApp/BookStack/blob/development/LICENSE). 
+The ShoujoStack source is provided under the [MIT License]. 
 
-The libraries used by, and included with, BookStack are provided under their own licenses and copyright.
-The licenses for many of our core dependencies can be found in the attribution list below but this is not an exhaustive list of all projects used within BookStack. 
+The libraries used by, and included with, ShoujoStack are provided under their own licenses and copyright.
+The licenses for many of used core dependencies can be found in the attribution list below but this is not an exhaustive list of all projects used within ShoujoStack and the original project this project sourced from. 
 
 ## 👪 Attribution
 
-The great people that have worked to build and improve BookStack can [be seen here](https://github.com/BookStackApp/BookStack/graphs/contributors). The wonderful people that have provided translations, either through GitHub or via Crowdin [can be seen here](https://github.com/BookStackApp/BookStack/blob/development/.github/translators.txt).
-
-Below are the great open-source projects used to help build BookStack. 
+Below are the great open-source projects used to help build ShoujoStack. 
 Note: This is not an exhaustive list of all libraries and projects that would be used in an active BookStack instance.
+
+* [BookStack](https://github.com/BookStackApp/BookStack) - _[MIT](https://github.com/BookStackApp/BookStack/blob/development/LICENSE.md)_
 
 * [Laravel](http://laravel.com/) - _[MIT](https://github.com/laravel/framework/blob/v8.82.0/LICENSE.md)_
 * [TinyMCE](https://www.tinymce.com/) - _[MIT](https://github.com/tinymce/tinymce/blob/develop/LICENSE.TXT)_
