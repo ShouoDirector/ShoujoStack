@@ -4,7 +4,7 @@
 
 ## 📚 Project Definition
 
-ShoujoStack is a web-based platform designed for the sharing and discovery of serialized shoujo web novels. Built with modern web technologies, this project aims to facilitate a community-driven ecosystem where writers and readers can interact seamlessly.
+ShoujoStack is a web-based platform based on BOOKSTACK codebase, designed for the sharing and discovery of serialized shoujo web novels. Built with modern web technologies, this project aims to facilitate a community-driven ecosystem where writers and readers can interact seamlessly.
 
 ShoujoStack is not designed as an extensible platform to be used for purposes that differ to the statement above or imitate any leading online web novel sites.
 
